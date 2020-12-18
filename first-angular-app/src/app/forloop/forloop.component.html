@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="display">
+        <p *ngFor="let item of itemArray"></p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="display-text">
+        <p>In this section you can add string items of your choice to an array of strings and see them displayed in
+        the box to your left.</p>
+        <div class="input-group">
+            <input type="text"
+                   placeholder="Add Item"
+                   class="item-input form-control mr-1"
+                   [(ngModel)]="userItem">
+            <div class="input-group-append">
+              <button class="btn btn-dark" (click)="onAddItem()"> Add item</button>
+            </div>
+          </div>
+        <p *ngIf="itemCreated" class="wait-item">{{ waitItem }}</p>
+        </div>
+      </div>
+    </div>
+</div>

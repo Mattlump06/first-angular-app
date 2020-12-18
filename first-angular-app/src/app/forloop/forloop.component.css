@@ -1,0 +1,23 @@
+.display {
+  width: 400px;
+  height: 500px;
+  padding: 30px;
+  margin-top: 75px;
+
+  box-shadow: 2px 2px 4px #444;
+}
+
+.display-text {
+
+  height: 500px;
+  margin-top: 75px;
+}
+
+.input-group {
+  margin-top: 20px;
+  width: 75%;
+}
+
+.wait-item {
+  color: grey;
+}
